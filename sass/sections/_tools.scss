@@ -1,0 +1,90 @@
+.tool-text {
+      // display: grid;
+      // grid-template-columns: 1fr max-content 1fr;
+      // grid-column-gap: 1.5rem;
+      // align-items: center;
+      padding-top: 3rem;
+
+      font-size: 1.6rem;
+      color: $gray-2;
+      text-align: center;
+      width: 80%;
+      margin: 0 auto;
+      // color: #333;
+
+
+      &::before,
+      &::after {
+        content: "";
+        height: 1px;
+        display: block;
+        background-color: transparent;
+      }
+      &::selection {
+        background-color: $accent-color-blue;
+      }
+}
+.tools_item {
+    background-color: $accent-color-blue;
+    width: 4rem;
+    height: 4rem;
+    float: left;
+    border-radius: 50%;
+    margin-right: 1rem;
+    position: relative;
+}
+.tools_item i {
+  font-size: 2rem;
+  font-weight: 100;
+  background-image: linear-gradient(to right bottom, $primary-color-light-blue, $primary-color-dark-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  // color: rgba($color-white, 1);
+  @include absCenter;
+}
+.tool_col_item {
+  background-color: $accent-color-blue;
+  width: 5rem;
+  height: 4rem;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  outline-color: blue($color: #000000);;
+  border-radius: .6rem;
+  
+
+}
+.tool_sze_item {
+  background-color: $accent-color-blue;
+  width: 5rem;
+  height: 4rem;
+  font-size: 1.6rem;
+  outline-color: blue($color: #000000);;
+  border-radius: .6rem;
+  -webkit-border-radius: .6rem;
+  -moz-border-radius: .6rem;
+  -ms-border-radius: .6rem;
+  -o-border-radius: .6rem;
+}
+.size-12{font-size: 1.2rem;}
+.size-18{font-size: 1.8rem;}
+.size-20{font-size: 2rem;}
+.size-24{font-size: 2.4rem;}
+.size-30{font-size: 3rem;}
+.size-36{font-size: 3.6rem;}
+.size-48{font-size: 4.8rem;}
+.size-60{font-size: 6rem;}
+.size-72{font-size: 7.2rem;}
+
+.tool_lan_item{
+  background-color: $accent-color-blue;
+  width: 15rem;
+  // height: 4rem;
+  font-size: 1.6rem;
+  outline-color: blue($color: #000000);;
+  border-radius: .6rem;
+  // margin-top: .8rem;
+}

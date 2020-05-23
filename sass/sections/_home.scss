@@ -1,0 +1,117 @@
+
+.home {
+    color: $color-white;
+    background-color: $primary-color-dark-blue;
+    grid-column: full-start / col-end 6;
+    min-height: 50rem;
+    background-image: linear-gradient(rgba($primary-color-light-blue, .3), rgba($primary-color-dark-blue, .6)), url(../img/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10rem;
+    padding-top: 6rem; 
+
+    display: grid;
+    grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+    grid-template-columns: minmax(min-content, max-content);
+    grid-row-gap: 1.5rem;
+    justify-content: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / -1;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 5rem;
+    }
+
+    
+    &__btn {
+      align-self: start;
+      justify-self: start;
+    }
+    &__seenon-text {
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-column-gap: 1.5rem;
+      align-items: center;
+
+      font-size: 1.6rem;
+      color: $medium-gray;
+
+        &::before,
+        &::after {
+            content: "";
+            height: 1px;
+            display: block;
+            background-color: currentColor;
+        }
+    }
+    &__seenon-logos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 3rem;
+        justify-items: center;
+        align-items: center;
+
+
+        
+    }
+}
+
+.infos {
+    background-color: $primary-color-blue;
+    grid-column: col-start 7 / full-end;
+    padding: 3rem;
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-row-gap: 2rem;
+    justify-items: center;
+
+    // @media only screen and (max-width: $bp-medium-sml) {
+        // grid-column: 1 / -1;
+        
+    // }
+
+
+    &__list {
+        display: grid;
+        grid-template-columns: min-content max-content;
+        grid-column-gap: 2rem;
+        grid-row-gap: 2vh;
+        align-items: center;
+
+        // @media only screen and (max-width: $bp-medium) {
+            grid-template-columns: repeat(3, min-content max-content);
+        // }
+
+        @media only screen and (max-width: $bp-small) {
+            grid-template-columns: min-content max-content;
+            grid-row-gap: 2vh;
+        }
+    }
+    &__img {
+        position: relative;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        background-color: white;
+        display: block;
+    }
+    &__img i {
+        font-size: 2rem;
+        color: $primary-color-blue;
+        @include absCenter;
+    }
+    &__stitle {
+        font-size: 1.4rem;
+        color: $light-gray;
+        margin-top: 1rem;
+    }
+    &__sold {
+        text-transform: uppercase;
+        color: $medium-gray;
+        margin-top: -3px;
+    }
+}

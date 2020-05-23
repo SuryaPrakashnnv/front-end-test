@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script> -->
+  <script src="./js/index.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script> -->
+  
+  
+
+
+  <title>Cusjo.com Front-End Test</title>
+</head>
+
+<body ng-app="frontendTest">
+  <div class="container" ng-controller="frontController">
+    <header class="header">
+      <!-- <img src="img/logo.jpeg" alt="legato logo" class="logo"> -->
+  
+      <div class="caption">Welcome To Front-End Test page</div>
+  
+      <nav class="user-nav">
+        <select class="tool_lan_item" name="language" id="language">
+          <option value="open-sans" selected>Open Sans</option>
+          <option value="oswald">Oswald</option>
+          <option value="kruti">Hindi</option>
+          <option value="chinese">Chinese</option>
+        </select>
+
+        <div class="user-nav__icon-box" id="facebook">
+          <i class="fa fa-facebook user-nav__icon" aria-hidden="true"></i>
+        </div>
+        <div class="user-nav__icon-box" id="twitter">
+          <i class="fa fa-twitter user-nav__icon" aria-hidden="true"></i>
+        </div>
+        <div class="user-nav__icon-box" id="instagram">
+          <i class="fa fa-instagram user-nav__icon" aria-hidden="true"></i>
+        </div>
+
+      </nav>
+    </header>
+  
+    <nav class="top-nav-bar">
+      <ul class="top-nav">
+        <li class="top-nav__item">
+          <a href="#!" class="top-nav__link">
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="top-nav__item">
+          <a href="#!about" class="top-nav__link">
+            <span>About</span>
+          </a>
+        </li>
+        <li class="top-nav__item">
+          <a href="#!services" class="top-nav__link">
+            <span>Services</span>
+          </a>
+        </li>
+        <li class="top-nav__item">
+          <a href="#!pages" class="top-nav__link">
+            <span>Pages</span>
+          </a>
+        </li>
+        
+      </ul>
+    </nav>
+  
+    <div class="page-content">
+      <div class="section-home">
+        <div class="home">
+          <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
+              Welcome To Front-End Test page
+            </h2>
+          </div>
+          <h3 class="heading-3">Hello, I am An Artist, Designer and UI Developer</h3>
+          <h1 class="heading-1">I care about your Web Service</h1>
+          <button class="lbtn lbtn--white lbtn--animated">View Services</button>
+          <div class="home__seenon-text">Best Designing and Develop of your Product</div>
+        </div>
+        <div class="infos">
+          <!-- <h3 class="heading-3">Top 3 Realtors</h3> -->
+          <div class="infos__list">
+            <div class="infos__img">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="infos__details">
+              <h4 class="infos__stitle">9849659256</h4>
+              <p class="infos__sold">Hello</p>
+            </div>
+            <div class="infos__img">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </div>
+            <div class="infos__details">
+              <h4 class="infos__stitle">surya@nnvsurya.com</h4>
+              <p class="infos__sold">info@cusjo.com</p>
+            </div>
+            <div class="infos__img">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </div>
+            <div class="infos__details">
+              <h4 class="infos__stitle">N N V Surya Prakash</h4>
+              <p class="infos__sold">Uppal 500092 Hyderabad</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section Tools -->
+      <div class="section-services">
+        <div class="services">
+          <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary-colored">
+              Edit Text Features
+            </h2>
+          </div>
+        </div>
+        <div class="bottom-line"></div>
+
+        <div class="card">
+          <div class="card-body d-flex">
+            <button class="btn btn-primary tools_item" id="bold"><i class="fa fa-bold" aria-hidden="true"></i></button>
+            <button class="btn btn-primary tools_item" id="italic"><i class="fa fa-italic" aria-hidden="true"></i></button>
+            <button class="btn btn-primary tools_item" id="underline"><i class="fa fa-underline" aria-hidden="true"></i></button>
+            <div class="tool_col_item">
+              <input type="color" id="color">
+              <!-- <div id="color-picker-1" class="mx-auto"></div> -->
+            </div>
+            <select class="tool_sze_item" name="size" id="size">
+              <option value="12" class="sizeEl">12</option>
+              <option value="18" class="sizeEl">18</option>
+              <option value="20">20</option>
+              <option value="24">24</option>
+              <option value="30">30</option>
+              <option value="36">36</option>
+              <option value="48">48</option>
+              <option value="60">60</option>
+              <option value="72">72</option>
+            </select> 
+            
+          </div>
+        </div>
+        
+        <div class="tool-text" id="edited-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ipsum unde harum magnam optio quidem doloremque
+          maxime, aperiam itaque debitis illo consequuntur, corporis rem mollitia?
+          <br><br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ipsum unde harum magnam optio quidem doloremque
+          maxime, aperiam itaque debitis illo consequuntur, corporis rem mollitia?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat esse minima sapiente est aliquam soluta tenetur cupiditate itaque dolorem blanditiis similique non, incidunt maiores iste nisi rem expedita corrupti enim autem sequi aliquid molestiae totam? Quos nemo delectus iste eos aspernatur odit inventore voluptatibus nam sunt hic pariatur, nisi optio, quo necessitatibus facere architecto odio sint beatae dolorum consectetur labore enim. Eius, voluptas. Repellat ullam magni ipsam, nam pariatur voluptas quibusdam voluptatibus! Vitae unde nihil quod magnam quia ipsam. Accusantium laborum deleniti numquam, culpa voluptatem dolore dicta mollitia itaque eum magni necessitatibus amet harum tempora quibusdam corrupti, deserunt placeat quae!
+          <p>z一二三四五六七八九十百千万上中下左右大小春夏秋冬东南西北金木水火土天地日月星黑白红橙黄绿蓝靛紫食住衣行育乐忠孝仁爱信义和平子曰父母兄弟夫妇君臣马牛羊鸡犬豕喜怒哀惧恶目耳口手足见闻声贝车雨赤青言语鱼鸟羽电不乃之乎人以何俱伦仪先光入具初则匏协去友同名善器严执孟孙学宜容专少山师席常幼序从性恩恭情惰应成所才扬择教敬数文断方于族昔时智曾有朋本杼某梨机次欲此岁温为燕玄玉琢畜当相知石祖礼稷稻谷穷窦竹粱紊丝纲习老者而能自至与苟菽处融亲调识让贵身近运过道远迁邻长非革音顺饲养首香高麦黍龄思源谷歌</p>
+        </div>
+      
+      
+        
+      
+        
+      
+      </div>
+
+      <!-- Section Charts -->
+      <div class="section-services">
+        <div class="services">
+          <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary-colored">
+              Interactive Chart
+            </h2>
+          </div>
+        </div>
+        <div class="bottom-line"></div>
+        <div class="card">
+          <div class="card-body d-flex m-auto">
+            <canvas id="chart" width="600" height="400"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section Services -->
+      <div class="section-services">
+        <div class="services">
+          <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary-colored">
+              Our Services
+            </h2>
+          </div>
+        </div>
+        <div class="bottom-line"></div>
+        <div class="sub-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ipsum unde harum magnam optio quidem doloremque
+          maxime, aperiam itaque debitis illo consequuntur, corporis rem mollitia?
+        </div>
+      
+      
+        <div class="services-grid">
+          <div class="services-grid__item">
+            <div class="services-grid__item-icon">
+              <i class="fa fa-html5" aria-hidden="true"></i>
+            </div>
+            <div class="services-grid__item-title">
+              HTML
+            </div>
+            <div class="services-grid__item-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut quisquam voluptate impedit, laborum vero!
+            </div>
+          </div>
+      
+          <div class="services-grid__item">
+            <div class="services-grid__item-icon">
+              <i class="fa fa-css3" aria-hidden="true"></i>
+            </div>
+            <div class="services-grid__item-title">
+              CSS
+            </div>
+            <div class="services-grid__item-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut quisquam voluptate impedit, laborum vero!
+            </div>
+          </div>
+      
+          <div class="services-grid__item">
+            <div class="services-grid__item-icon">
+              <i class="fa fa-spinner" aria-hidden="true"></i>
+            </div>
+            <div class="services-grid__item-title">
+              SASS
+            </div>
+            <div class="services-grid__item-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut quisquam voluptate impedit, laborum vero!
+            </div>
+          </div>
+      
+          <div class="services-grid__item">
+            <div class="services-grid__item-icon">
+              <i class="fa fa-spinner" aria-hidden="true"></i>
+            </div>
+            <div class="services-grid__item-title">
+              javascript
+            </div>
+            <div class="services-grid__item-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut quisquam voluptate impedit, laborum vero!
+            </div>
+          </div>
+      
+          <div class="services-grid__item">
+            <div class="services-grid__item-icon">
+              <i class="fa fa-spinner" aria-hidden="true"></i>
+      
+            </div>
+            <div class="services-grid__item-title">
+              jQuery
+            </div>
+            <div class="services-grid__item-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut quisquam voluptate impedit, laborum vero!
+            </div>
+          </div>
+      
+          <div class="services-grid__item">
+            <div class="services-grid__item-icon">
+              <i class="fa fa-spinner" aria-hidden="true"></i>
+            </div>
+            <div class="services-grid__item-title">
+              Angular
+            </div>
+            <div class="services-grid__item-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut quisquam voluptate impedit, laborum vero!
+            </div>
+          </div>
+        </div>
+      
+        <div class="services-grid1">
+          <div class="services-grid1__item">
+      
+          </div>
+        </div>
+      
+      </div>
+
+
+      <div ng-view></div>
+
+    </div>
+  
+    <footer>
+      <div class="footer">
+  
+  
+        <div class="footer__item footer__item-1">
+          <div class="footer__title">About Us</div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facere hic aliquam earum, illum officia
+            suscipit nesciunt ut doloremque debitis laboriosam exercitationem labore quisquam aperiam dicta sequi
+            assumenda cupiditate nobis ab delectus perferendis illo! Voluptatem id quos labore nobis perferendis!</p>
+  
+        </div>
+        <div class="footer__item footer__item-2">
+          <div class="footer__title">Latest Blog News</div>
+          <figure class="review">
+            <figcaption class="review__user">
+              <img src="img/lbn_t1.jpg" alt="User 1" class="review__photo">
+              <div class="review__user-box">
+                <p class="review__user-name">John</p>
+                <p class="review__user-date">Feb 23rd, 2019</p>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="review">
+            <figcaption class="review__user">
+              <img src="img/lbn_t2.jpg" alt="User 1" class="review__photo">
+              <div class="review__user-box">
+                <p class="review__user-name">Mahesh</p>
+                <p class="review__user-date">Feb 23rd, 2019</p>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="review">
+            <figcaption class="review__user">
+              <img src="img/lbn_t3.jpg" alt="User 1" class="review__photo">
+              <div class="review__user-box">
+                <p class="review__user-name">Rathod</p>
+                <p class="review__user-date">Feb 23rd, 2019</p>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="footer__item footer__item-3">
+          <div class="footer__title">Services</div>
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__litem"><a href="#!" class="footer__link">. Home</a></li>
+              <li class="footer__litem"><a href="#!pages" class="footer__link">. Pages</a></li>
+              <li class="footer__litem"><a href="#!features" class="footer__link">. Features</a></li>
+              <li class="footer__litem"><a href="#!contact" class="footer__link">. Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__item footer__item-4">
+          <div class="footer__title">Contact Us</div>
+          <div class="footer__contact">
+            N N V Surya Prakash <br>
+            Uppal 500092 Hyderabad, India<br>
+            <br>
+            +91 9849659256 <br>
+            +91 8309263477 <br>
+            <br>
+            surya@nnvsurya.com
+  
+          </div>
+        </div>
+  
+      </div>
+      <div class="copyright fixed-bottom">
+        &copy; Front-End-Test Made by SURYA
+      </div>
+    </footer>
+  
+  
+  </div>
+  
+  
+  <div class="sub-description">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ipsum unde harum magnam optio quidem doloremque
+    maxime, aperiam itaque debitis illo consequuntur, corporis rem mollitia?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat esse minima sapiente est aliquam soluta tenetur
+    cupiditate itaque dolorem blanditiis similique non, incidunt maiores iste nisi rem expedita corrupti enim autem sequi
+    aliquid molestiae totam? Quos nemo delectus iste eos aspernatur odit inventore voluptatibus nam sunt hic pariatur,
+    nisi optio, quo necessitatibus facere architecto odio sint beatae dolorum consectetur labore enim. Eius, voluptas.
+    Repellat ullam magni ipsam, nam pariatur voluptas quibusdam voluptatibus! Vitae unde nihil quod magnam quia ipsam.
+    Accusantium laborum deleniti numquam, culpa voluptatem dolore dicta mollitia itaque eum magni necessitatibus amet
+    harum tempora quibusdam corrupti, deserunt placeat quae!
+  </div>
+
+  <script src="js/chart.js"></script>
+  <script src="js/mychart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
